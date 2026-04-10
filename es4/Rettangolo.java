@@ -1,4 +1,3 @@
-package Java.es4_c;
 
 public class Rettangolo{
     int base, altezza,  x,  y;
