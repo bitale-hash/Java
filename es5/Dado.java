@@ -1,22 +1,23 @@
  
 
 import java.util.Random; 
-import java.lang.Math; 
+//import java.lang.Math;                  gia integrato, non serve
 
 public class Dado 
 { 
     private int numeroFacce; 
-    private Random gen;
+    private Random gen=new Random();
+    private int result;
 
     //COSTRUTTORE1
     public Dado(){
-        numeroFacce = 6; 
-        gen = new Random();
+        this.numeroFacce = 6; 
+        //result = gen.nextInt(numeroFacce) + 1;  non mi piace la logica quindi lo eliminerei
     }
     //COSTRUTTORE2
     public Dado(int n){ 
-        numeroFacce=n;
-        gen= new Random();
+        this.numeroFacce=n;
+        //result = gen.nextInt(n) + 1;              non mi piace la logica quindi lo eliminerei
     }
 
     public int getFacce() { 
@@ -30,8 +31,7 @@ public class Dado
 
     //UTILIZZA LA CLASSE RANDOM x generare un numero random
     public int lanciaRandom() {      
-        int result = gen.nextInt(numeroFacce) + 1 ; 
-        return result; 
+        return gen.nextInt(numeroFacce) + 1; 
     } 
     //UTILIZZA LA CLASSE MATH x generare un numero random
     public int lanciaMath(){   
