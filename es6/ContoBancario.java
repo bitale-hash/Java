@@ -20,9 +20,15 @@ public class ContoBancario{
     public void Add(BigDecimal n){
       conto=conto.add(n);
       System.out.println("aggiunti "+n+" € al conto "+ name);
+      System.out.println("totale saldo : "+conto+" € ");
+    }
+    public void Withdrawn(BigDecimal n){
+      System.out.println("Detrazione dal conto "+name+" di :  "+ n+" € ");
+      conto=conto.subtract(n);
+      System.out.println("Saldo attuale del conto "+name+" è di :  "+ conto+" € ");
     }
     public BigDecimal StampaScontrino(){
-      System.out.println("il conto attuale di ' "+name+ " '   è di : "+conto+" €");
+      System.out.println("Stampo scontrino");
       return (BigDecimal) conto; //conto e BigDecimal
     }
     public void Saldo(){
