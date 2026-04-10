@@ -1,12 +1,13 @@
 package Java.es7;
-
+import java.math.BigDecimal;
+import java.time.Duration;
 public class Main {
     public static void main(String[] args) { 
   
-    Cellulare nokia = new Cellulare(20.0,0); 
+    Cellulare nokia = new Cellulare(new BigDecimal(20.00),0); 
  
-    nokia.ricarica(50.0); 
-    nokia.chiamata(111.0); 
+    nokia.ricarica(new BigDecimal(50.00)); 
+    nokia.chiamata(Duration.ofSeconds(110)); 
 
         //CONTROLLO CREDITO 
     System.out.println(nokia.numero404()); 
