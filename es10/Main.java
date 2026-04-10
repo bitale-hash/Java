@@ -11,7 +11,8 @@ public class Main {
         input.close(); 
 
         SecondConverter a= new SecondConverter();
-        System.out.println(a.calcola(s));
+        System.out.println(a.calcola(s));     
+    
         
     }
 }

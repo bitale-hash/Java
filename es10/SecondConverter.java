@@ -2,14 +2,13 @@ package Java.es10;
 
 public class SecondConverter {
     int g,o,m,s;
-    public SecondConverter(){
+    public SecondConverter(){                               //mi serve se poter istanziare un ogetto senza valore/i
         g=0;
         o=0;
         m=0;
         s=0;
     }
-
-    public SecondConverter(int g,int o,int m,int s){
+    public SecondConverter(int g,int o,int m,int s){        //mi serve per poter tornare un oggetto con calcola()
         this.g=g;
         this.o=o;
         this.m=m;
@@ -27,4 +26,5 @@ public class SecondConverter {
         System.out.println( s +" secondi");
         return new SecondConverter(g,o,m,s);
     }
+   
 }
