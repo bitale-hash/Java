@@ -7,7 +7,7 @@ public class Dado
 { 
     private int numeroFacce; 
     private Random gen=new Random();
-    private int result;
+    //private int result;
 
     //COSTRUTTORE1
     public Dado(){
