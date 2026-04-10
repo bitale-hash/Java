@@ -18,6 +18,7 @@ public class Main {
         Scanner input=new Scanner(System.in);
         System.out.println("inserisci il numero di faccie del dado");
         int nf = input.nextInt();
+        input.close();
         d1.setFacce(nf); 
 }
 }

@@ -14,7 +14,7 @@ public class Main {
             x = input.nextInt();
         System.out.println("scrivi la posizione del punto in basso a sinistra del rettangolo nel piano delle ordinate (y):  ");
             y = input.nextInt();
-            
+         input.close();   
         Rettangolo r=new Rettangolo(b,a,x,y);
 
         r.stampa();
@@ -25,6 +25,6 @@ public class Main {
         
         System.out.println("La dimensione della base è: "+r.getBase());
         
-
+        
     }
 }
