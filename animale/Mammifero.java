@@ -7,15 +7,21 @@ public class Mammifero extends Animale{     //CLASSE FIGLIA
         super(nome, eta, verso);
         this.pelo = pelo;
     } 
+
+    /*tutti i metodi, compresi i get e set della classe Animale 
+    sono utilizzabili anche dalla classe Mammifero */
+
     //metodi get
-    public String getVerso(){
-        return verso;
-    } 
+    public void getPelo(){
+        return pelo;
+    }
     //metodi set
     public void setVerso(String verso){
         this.verso = verso;  
     }
-    //toString  
+    /*toString   
+                 per utilizzarlo devo avere un oggetto Mammifero 
+    */
     public String toString(){
             return "Animale: " + nome + ", Età: " + eta + ", Verso: " + verso + ", Pelo: " + pelo  ;
     }
